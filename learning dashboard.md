@@ -1,0 +1,75 @@
+---
+cssclasses:
+  - dashboard
+---
+# Languages
+
+- #### JS
+	- [[Destructuring assignment]]
+	- [[Spread and rest operators]]
+	- Assignment by value and by reference; deep copies
+	- Side effects
+	- Difference between optional property and property with `| undefined` 
+	- Currying
+	- Pipe
+	- Scope & Closure
+	- shallow copy
+	- Async code.
+	- `Array.prototype.reduce()`
+	- `Map()`
+	- `try catch` syntax
+	- eager vs lazy loading
+- #### TS
+	- the T<> magic. all uses.
+	- `Omit` 
+- #### React
+	- Props passing and destructuring
+	- Side effects and pure functions
+	- `<Component {...props}>`
+	- All the exotic hooks.
+- #### Next
+- #### CSS
+	- pseud-selectors
+
+# Other 
+- #### DOM, browser and the web
+	- calling stack 
+	- Serverside vs clientside
+	- REST API's vs GraphQL
+	- Load balancer
+	- Proxy and tunelling
+- #### Git
+	- hunking
+	- rebasing
+	- patch
+	- bare repositories
+	- tags
+- #### Algorithms and data structures
+- #### Linux
+	- [linux resources](linux%20resources.md)
+	- grep
+	- chmod
+	- [cron]
+- #### Shell/Bash
+	- [bash resources](bash%20resources.md)
+	- [[source]]
+- #### Dev tools 
+
+# Assorted
+- #### Topics
+	 - Dev tools poweruser
+	- JS: properties of objects can have quotes around them
+	- declarative vs imperative code
+	- Shell scripts
+	- BIOS
+	- Copilot Notebook
+	- bashrc explain
+	- generate_types explain
+	- Edge computing
+- #### Mysterious words I heard
+	- "single threaded" vs "multi-threaded"
+	- "Lazy loading"
+	- Connectors- etc. Queue It connector
+	- "error boundaries" in command line
+- #### Courses
+	- Dotfiles [1](https://www.udemy.com/course/dotfiles-from-start-to-finish-ish/?referralCode=445BE0B541C48FE85276) [2](https://www.youtube.com/watch?v=r_MpUP6aKiQ)
