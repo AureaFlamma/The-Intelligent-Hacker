@@ -81,7 +81,21 @@ Found on responses
 - 404 Not found
 - 500 Internal server error
 ### Headers
-
+[List of all HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+#### Request
+- `Cookie` - contains stored HTTP cookies associated with the server (i.e. previously sent by the server with the `Set-Cookie` header or set in JavaScript using `Document.cookie`).
+- `Accept` - Specifies the media type that the client is willing to receive from the server. Part of [[content negotiation]]
+- `Accept-Encoding` - Indicates the content encoding method (e.g. gzip, deflate) the client can understand. Part of [[content negotiation]]
+- `Accept-Language` - Specifies preference for a natural language. Part of [[content negotiation]]. You can set the preference in your browser settings. Usually browsers will include in this header a list of languages with decreasing `q` values, indicating order of preference for languages. E.g.
+```
+Accept-Language: fr,la;q=0.8,en-GB;q=0.5,en;q=0.3
+```
+  It reads: Latin, then French at 0.8 importance, then British english at 0.5 importance, then English at 0.3 importance.
+  - 
+#### Response
+- `Accept-CH`
+#### Representation
+#### Payload
 
 
 ## History

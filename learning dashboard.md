@@ -66,6 +66,7 @@ cssclasses:
 	- bashrc explain
 	- generate_types explain
 	- Edge computing
+	- Cookies
 - #### Mysterious words I heard
 	- "single threaded" vs "multi-threaded"
 	- "Lazy loading"
