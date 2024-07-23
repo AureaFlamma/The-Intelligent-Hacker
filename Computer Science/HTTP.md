@@ -64,6 +64,7 @@ Found on requests
 - **POST** - client adds data to server
 - **PUT** - client replaces data on server
 - **DELETE** - client deletes data from server
+- **HEAD** - clients requests only the headers that would be returned if the request was `GET`. Useful for seeing if the resource which is about to be sent is a large one (by looking at `Content-Length` response header)
 ### Status codes
 Found on responses
 - **1xx** Informational
@@ -91,9 +92,31 @@ Found on responses
 Accept-Language: fr,la;q=0.8,en-GB;q=0.5,en;q=0.3
 ```
   It reads: Latin, then French at 0.8 importance, then British english at 0.5 importance, then English at 0.3 importance.
-  - 
+  - `Authorization` Contains the credentials to authenticate a user agent with a server. Usually client sends first request without `Authorisation` header, server replies with `401 Unauthorized` and `WWW-Authenticate` header. 
+  - `Cache-Control` holds directives (instructions) that control caching in browser and middleware (Proxies, CDNs). Present in both Request and Response headers.
+  - `Connection` indicates whether the client wants the connection to stay open (`Connection: keep alive`) or be closed (`Connection: close`) after the current transaction. Rarely used in HTTP/2 and HTTP/3.
+  - `Host` specifies the host and TCP port number of the server to which the request is being sent. Port number can be ommited, in which case the default port is implied (e.g., `443` for an HTTPS URL, and `80` for an HTTP URL).
+  - **`If-Modified-Since`** request HTTP header makes the request conditional: the server sends back the requested resource, with a `200` status, only if it has been last modified after the given date. If the resource has not been modified since, the response is a `304` without any body.
+  - `If-None-Match` makes the request conditional. For `GET` and `HEAD` methods, the server will return the requested resource, with a `200` status, only if it doesn't have an `ETag` matching the given ones. For other methods, the request will be processed only if the eventually existing resource's `ETag` doesn't match any of the values listed.
+  - `Referer` (sic) contains the URL of the website from which the request was made. Unlike `Origin`, which contains only protocol and domain name, `Referer` contains protocol, domain, port (sometimes), path and query string.
+  - `Origin` contains domain from which request was made
+```
+// Let's say we are visiting example.com and clicking a link that takes us to example2.com. The request sent to example2.com's server will be:
+    
+Referer: https://example.com/page1.html?query=123
+Origin: https://example.com
+```
+- `User-Agent` contains info about browser and OS:
+```
+User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+```
+
 #### Response
 - `Accept-CH`
+- `WWW-Authenticate` contains a list of authentication methods ("challenges") which might be used to gain access to a protected resource. 
+- `Cache-Control` holds directives (instructions) that control caching in browser and middleware (Proxies, CDNs). Present in both Request and Response headers
+- `Set-Cookie`
+- `ETag` Specifies the version of the resource. Requested with `If-None-Match` request header. Useful for not sending the same data multiple times (`GET`) and for version control (`PUT`, `PATCH`, `DELETE`)
 #### Representation
 #### Payload
 
@@ -103,3 +126,15 @@ Accept-Language: fr,la;q=0.8,en-GB;q=0.5,en;q=0.3
 ## TLS vs UDP
 
 ## Encryption - HTTPS
+
+## Authorisation 
+Might be same as encryption
+
+## Caching
+
+## Etag
+and resource updating
+
+## Referer
+
+## CORS

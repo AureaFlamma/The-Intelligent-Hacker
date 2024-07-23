@@ -3,29 +3,23 @@ When determining the value of a variable based on certain conditions, it's commo
 Consider the traditional approach:
 
 ```javascript
-const onClick = () => {
   let updatedArray;
   if (condition) {
     updatedFilters = valueA;
   } else {
     updatedFilters = valueB;
   }
-  // Use updatedFilters
-};
 ```
 
 This can be simplified and made more declarative by using an IIFE:
 
 ```javascript
-const onClick = () => {
   const updatedArray = (() => {
     if (condition) {
       return valueA;
     }
     return valueB;
   })();
-  // Use updatedFilters
-};
 ```
 
-The second approach has several benefits over the first. Firstly, it promotes the use of immutable variables, which can help prevent bugs related to unintended reassignments. Secondly, it encapsulates the logic for determining the value of `updatedFilters` within a single, concise expression, making the code more readable and maintainable. Lastly, this pattern makes it clearer that `updatedFilters` is meant to be a constant value determined by a specific piece of logic, emphasizing the declarative nature of the code.
+The second approach has several benefits over the first. Firstly, it promotes the use of immutable variables, which can help prevent bugs related to unintended reassignments. Secondly, it encapsulates the logic for determining the value of `updatedFilters` within a single, concise expression, making the code more readable and maintainable. Because the variable is now a constant, all the logic must happen inside the IIEF. No logic can be added in the future outside of it, making for greater predictability. Lastly, this pattern makes it clearer that `updatedFilters` is meant to be a constant value determined by a specific piece of logic, emphasizing the declarative nature of the code.

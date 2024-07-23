@@ -3,6 +3,7 @@
 **RESOURCES**
 [How does the Internet Work? (CS.FYI)](https://cs.fyi/guide/how-does-internet-work)
 [What is the OSI Model?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/open-systems-interconnection-model-osi/)
+
 ## Hardware
 Computers on a network are connected to a router. Router is connected to a modem which converts our data into data manageable by a phone network (1). The phone network carries the data to an Internet Service Provider. ISP's manage special routers which connect to other ISPs' routers. 
 ###### Figure 1
@@ -24,6 +25,9 @@ Computers on a network are connected to a router. Router is connected to a modem
 - HTTP/HTTPS
 - TLS - security (used in HTTPs)
 
+## Caching
+
+## Security and authorisation
 
 
 
