@@ -1,0 +1,3 @@
+In HTTP/2.0, if the server knows that a client will need a resource (e.g. a CSS or JS file to go with the HTML), it can push it to the client without the client having to request it first. Here's how it works:
+- Server sends `PUSH_PROMISE` frame to notify the client it's about to push some data. the frame contains both the id of the stream which caused it (e.g. the stream in which the client requested the HTML) as well as the id of the stream in which the push will be made, which is different.
+- Client decides whether it wants to accept the push. If it doesn't, it can send `RST_STREAM` to cancel the pushed stream. 
