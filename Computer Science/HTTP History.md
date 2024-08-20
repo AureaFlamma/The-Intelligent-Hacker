@@ -28,9 +28,12 @@ GET /index.html
 - Even more methods (PUT, PATCH, OPTIONS, DELETE)
 - Client cookies
 - Enhanced compression, caching etc.
+
+### Drawbacks
+- [[Head-of-line blocking]]
+- **Head-of-line blocking** - even with pipelining, requests are fulfilled sequentially. Even though next request can be sent without waiting for the previous one to receive a response, responses still must be received and processed in order. Thus, even though requests 1, 2 and 3 can be sent one after the other, if response 2 is taking a long time to get to client, it'll block response 3. 
 ## HTTP 2.0
-- [[Binary Protocol]] instead of Textual
-- [[Multiplexing]]
+- Binary Protocol (instead of Textual) and  [[Multiplexing]]
 - [[Header compression]]
 - [[Server Push]]
 - [[Request prioritisation]]
