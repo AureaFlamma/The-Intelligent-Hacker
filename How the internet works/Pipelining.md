@@ -10,6 +10,6 @@ How about this instead: let's attach a label to the first packet on the belt say
 
 It works in reverse too: client requests which have a body (e.g. form data) carry `Content-Length` header for the same reason. 
 
-NB: You can have [Persistent Connections] without Pipelining- you just wait for a response to each request before sending the next one. You can't have Pipelining without Persistent Connections though.
+NB: You can have [[Persistent Connections]] without Pipelining- you just wait for a response to each request before sending the next one. You can't have Pipelining without Persistent Connections though.
 
 This strategy only works when the server knows the length of the data it is sending. What if data is generated dyunamically? 

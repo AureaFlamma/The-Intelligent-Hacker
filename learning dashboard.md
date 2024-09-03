@@ -19,6 +19,7 @@ cssclasses:
 	- `Map()`
 	- `try catch` syntax
 	- eager vs lazy loading
+	- Module Pattern
 - #### TS
 	- the T<> magic. all uses.
 	- `Omit` 

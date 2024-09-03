@@ -1,16 +1,3 @@
-- TLS/SSL handshake as output in terminal
-- fetch API
--
-- Man-in-the-middle attack
-- SSL
-- _origin constraint_
-- server-sent events api
-- Quic
-- UDP
-- Quic is an alternative to TCP
-
-- Common status codes to remember
-
 ## Anatomy of a request
 
 ### Example
@@ -134,26 +121,3 @@ User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Fi
 - `Content-Location` Specifies a URL at which the sent resource can be accessed directly. Most often found on responses, rarely on requests. See [examples](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Location#examples)for more context. 
 - `Content-Range` Indicates the part of a document that the server is returning. Useful for partial content requests. 
   Example: `Content-Range: bytes 200-1000/67589`
-
-
-## History
-
-## TLS vs UDP
-
-## Encryption - HTTPS
-
-## Authorisation 
-Might be same as encryption
-
-## Caching
-
-## Etag
-and resource updating
-
-## Referer
-
-## CORS
-
-## Content negotiation
-
-## Hop-by-hop header

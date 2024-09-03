@@ -9,31 +9,14 @@ Computers on a network are connected to a router. Router is connected to a modem
 ###### Figure 1
 ![](internet-schema-7%202.png)
 
-
-
 (1) - dial-up internet (now obsolete), DSL and Cable use the telephone network. Wireless and Fibreoptic don't- but the underlying mechanics are the same regardless of the kind of connection. 
-## OSI Model
 
-
-## Main protocols
-- IP:
-	- IPv4 (32 bits)
-	- IPv6 (128 bit)
-- TCP
-- DNS
-- SSL/TLS
-- HTTP/HTTPS
-- TLS - security (used in HTTPs)
-
-## Caching
-
-## Security and authorisation
-
-
-
-## Questions
-- Do application layer protocols (HTTP and SMTP) translate human readable data into computer-readable data? 
-- RE: OSI Model - difference between same network and different networks re: the layers. 
-- All other protocols I've missed.
-- Less essential: so the Web is different to email and IRC services huh? 
-- HTTPS: 
+## Open systems Interconnection (OSI) Model
+[OSI Model diagram](OSI%20Model.md)
+1. **Physical Layer** 
+2. **Data Link Layer**
+3. **Network Layer** | IP
+4. **Transport Layer** | TCP
+5. **Session Layer** | [SSL/TLS](SSL%20and%20TLS.md)
+6. **Presentation Layer**
+7. **Application Layer** | [HTTP](HTTP.md)
