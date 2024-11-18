@@ -1,0 +1,18 @@
+Different types of web hosting:
+- **shared** - you share physical server with many other apps.
+	- ➕ Cheap
+	- ➖ You share resources (RAM, CPU) with other people's apps. This creates problems with traffic surges etc.
+	- ➖ Vulnerable to [[DoS attacks]]. An attack targeted at the server (or a different website at the server) will affect your app.
+- **Virtual Private Server** - you get your own compartment of a physical server. You get a dedicated, guaranteed share of resources.
+	- ➕ You don't share respources with anyone and can scale them up at any point. 
+	- ➕ Attacks have to be directed at your own partition of the server.
+	- ➕ You can choose your own operating system
+	- ➕ Easily upgradable/scaleable, including temporarily (for surge times)
+	- ➖ You gotta manage it yourself (infra skills)
+- **Managed VPS** - as VPS, but managed. 
+	- ➕ You don't have to manage anything
+	- ➖ More expensive than VPS. 
+- **Dedicated server** - you get a whole physical server to yourself. Basically like self-hosted, but you rent the server instead of owning it.
+	- ➕ All the advantages of a VPS but:
+	- ➖ Much more expensive
+	- ➖ Not scaleable
