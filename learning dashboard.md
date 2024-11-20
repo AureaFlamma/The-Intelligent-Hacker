@@ -7,6 +7,7 @@ cssclasses:
 - #### JS
 	- [[Destructuring assignment]]
 	- [[Spread and rest operators]]
+	- [[named vs positional parameters]]
 	- Assignment by value and by reference; deep copies
 	- Side effects
 	- Difference between optional property and property with `| undefined` 

@@ -1,0 +1,5 @@
+- TTFB - Time To First Byte
+- TCP slow start
+- DOM vs CSSOM
+- critical rendering path
+- Preload scanner
